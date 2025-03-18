@@ -79,7 +79,7 @@ pub fn default() -> HashMap<Mode, KeyTrie> {
 
 
         "k" => select_regex,
-        "A-h" => split_selection_on_newline,
+        "A-k" => split_selection_on_newline,
         "A-minus" => merge_selections,
         "A-_" => merge_consecutive_selections,
         "I" => split_selection,
@@ -345,7 +345,7 @@ pub fn default() -> HashMap<Mode, KeyTrie> {
 
         "w" => extend_next_word_start,
         "b" => extend_prev_word_start,
-        "j" => extend_next_word_end,
+        "l" => extend_next_word_end,
         "W" => extend_next_long_word_start,
         "B" => extend_prev_long_word_start,
         "E" => extend_next_long_word_end,
