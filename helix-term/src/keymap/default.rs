@@ -28,11 +28,11 @@ pub fn default() -> HashMap<Mode, KeyTrie> {
 
         "w" => move_next_word_start,
         "b" => move_prev_word_start,
-        "j" => move_next_word_end,
+        "l" => move_next_word_end,
 
         "W" => move_next_long_word_start,
         "B" => move_prev_long_word_start,
-        "J" => move_next_long_word_end,
+        "L" => move_next_long_word_end,
 
         "v" => select_mode,
         "G" => goto_line,
@@ -138,8 +138,8 @@ pub fn default() -> HashMap<Mode, KeyTrie> {
 
         "/" => search,
         "?" => rsearch,
-        "l" => search_next,
-        "L" => search_prev,
+        "j" => search_next,
+        "J" => search_prev,
         "*" => search_selection_detect_word_boundaries,
         "A-*" => search_selection,
 
@@ -304,8 +304,8 @@ pub fn default() -> HashMap<Mode, KeyTrie> {
 
             "/" => search,
             "?" => rsearch,
-            "l" => search_next,
-            "L" => search_prev,
+            "j" => search_next,
+            "J" => search_prev,
         },
         "Z" => { "View" sticky=true
             "z" | "c" => align_view_center,
@@ -321,8 +321,8 @@ pub fn default() -> HashMap<Mode, KeyTrie> {
 
             "/" => search,
             "?" => rsearch,
-            "l" => search_next,
-            "L" => search_prev,
+            "j" => search_next,
+            "J" => search_prev,
         },
 
         "\"" => select_register,
@@ -353,8 +353,8 @@ pub fn default() -> HashMap<Mode, KeyTrie> {
         "A-e" => extend_parent_node_end,
         "A-b" => extend_parent_node_start,
 
-        "l" => extend_search_next,
-        "L" => extend_search_prev,
+        "j" => extend_search_next,
+        "J" => extend_search_prev,
 
         "t" => extend_till_char,
         "f" => extend_next_char,
