@@ -6,10 +6,10 @@ use helix_core::hashmap;
 
 pub fn default() -> HashMap<Mode, KeyTrie> {
     let normal = keymap!({ "Normal mode"
-        "h" | "left" => move_char_left,
-        "j" | "down" => move_visual_line_down,
-        "k" | "up" => move_visual_line_up,
-        "l" | "right" => move_char_right,
+        "m" | "left" => move_char_left,
+        "n" | "down" => move_visual_line_down,
+        "e" | "up" => move_visual_line_up,
+        "i" | "right" => move_char_right,
 
         "t" => find_till_char,
         "f" => find_next_char,

@@ -18,7 +18,7 @@
 
 ![Screenshot](./screenshot.png)
 
-A [Kakoune](https://github.com/mawww/kakoune) / [Neovim](https://github.com/neovim/neovim) inspired editor, written in Rust.
+A [Kakoune](https://github.com/mawww/kakoune) / [Neovim](https://github.com/neovim/neovim) inspired editor, written in Rust, customized for Colemak Mod DH keyboard layout.
 
 The editing model is very heavily based on Kakoune; during development I found
 myself agreeing with most of Kakoune's design decisions.
@@ -32,6 +32,7 @@ All shortcuts/keymaps can be found [in the documentation on the website](https:/
 
 # Features
 
+- Key remapping for Colemak Mod DH layout
 - Vim-like modal editing
 - Multiple selections
 - Built-in language server support
